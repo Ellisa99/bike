@@ -1,10 +1,11 @@
 html {
-  height: 100%;
+  background: linear-gradient(#FC5E55, #FA4083);
 }
 
 body {
-  background-image: linear-gradient(#FC5E55, #FA4083);
-  background-size: cover;
+  background-image: url(images/image-lion-background.png);
+  background-repeat: no-repeat;
+  background-position: center top;
   font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 1.125rem;
@@ -15,6 +16,7 @@ body {
   min-height: 300px;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
 header {
@@ -22,17 +24,24 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;}
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
 
 main {
   min-height: 300px;
   display: flex;
   align-items: center;
 }
+.main2{
+  min-height: 300px;
+  padding-top: 50px;
+}
 
 .cards {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .card1 {
@@ -58,6 +67,11 @@ main {
   width: 30%;
   height: 250px;
 }
+.card1, .card2, .card3 {
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0 , 0.228);
+}
 
 .herobox1 {
   flex: 2;
@@ -72,9 +86,108 @@ h1 {
   font-size: 3.25rem;
   font-family: 'Playfair Display', serif;
   margin-bottom: 1rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0 , 0.228);
 }
 
 p {
   line-height: 1.75rem;
   margin-bottom: 0.5rem;
+}
+h2 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  padding-top: 20px;
+  
+}
+.cards p {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+}
+ i {
+   font-size: 100px;
+   
+ }
+ .cards a{
+   color: white;
+   text-decoration: none;
+ }
+
+ .mybutton {
+   background-color: white;
+   font-family: 'Playfair Display', serif;
+   color: #FA4083;
+   text-decoration: none;
+   padding: 11px 20px;
+   margin-top: 20px;
+   display: inline-block;
+   border-radius: 2px;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0 , 0.228);
+
+ }
+ .mybutton:hover{
+   background-color: lightskyblue;
+ }
+nav .navbutton {
+  color: white;
+  text-decoration:none;
+  margin-left: 1px;
+  border: thin solid white;
+  padding: 11px 25px;
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  position: relative;
+}
+nav .navbutton a {
+  color: white;
+  text-decoration:none;
+}
+.navbutton:hover{
+  background-color: lightskyblue;
+  color:#FA4083;
+}
+.testimon {
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 50px;
+}
+
+.test {
+  width: 47%;
+  border: 1px solid  white;
+  padding:50px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  
+}
+.drop{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 11px;
+  text-align: center;
+}
+ 
+ .navbutton:hover .drop{
+display: block;
+}
+.drop .navbutton {
+ 
+  margin-left: -25px;
+}
+.rapper {
+  margin-bottom: 20px;
+
+}
+input[type=text], input[type=email], textarea{
+  box-sizing: border-box;
+  padding: 12px 20px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+}
+.label{
+  display: block;
+  margin-bottom: 10px;
 }
